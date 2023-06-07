@@ -137,7 +137,7 @@ public class regularTablePageController implements Initializable {
     }
 
     @Override
-    public void initialize(URL url, ResourceBundle rb) { // Function that runs each time adminTablePage.fxml is open
+    public void initialize(URL url, ResourceBundle rb) { // Function that runs each time regularTablePage.fxml is open
         greetingLabel.setText("Hello " + userData.getName() + "!");
         storeDataView.setText("Viewing data for store " + userData.getShopID() + ".");
 
@@ -212,7 +212,7 @@ public class regularTablePageController implements Initializable {
     public void addData() { // Function for adding data entries
         try {
             Main m = new Main();
-            m.changeScene("adminAddingPage.fxml");
+            m.changeScene("regularAddingPage.fxml");
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
