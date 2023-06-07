@@ -98,7 +98,7 @@ public class regularAddingPageController {
         }
         try {
             Main m = new Main();
-            m.changeScene("adminTablePage.fxml");
+            m.changeScene("regularTablePage.fxml");
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
