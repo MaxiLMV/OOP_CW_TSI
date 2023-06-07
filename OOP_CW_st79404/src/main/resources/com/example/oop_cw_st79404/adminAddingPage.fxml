@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_cw_st79404.adminAddingPageController">
+    <opaqueInsets>
+        <Insets top="2.0" />
+    </opaqueInsets>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <TextField fx:id="itemNameAdd" layoutX="514.0" layoutY="220.0" promptText="NAME">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="itemTypeAdd" layoutX="514.0" layoutY="283.0" promptText="TYPE">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="availableAdd" layoutX="514.0" layoutY="343.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="desiredAdd" layoutX="514.0" layoutY="403.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="priceAdd" layoutX="514.0" layoutY="463.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <Text fill="#c3dfe0" layoutX="401.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM NAME" textAlignment="RIGHT" wrappingWidth="100.763671875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Text fill="#c3dfe0" layoutX="401.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM TYPE" textAlignment="RIGHT" wrappingWidth="100.8310546875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Text fill="#c3dfe0" layoutX="330.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMBER AVAILABLE" textAlignment="RIGHT" wrappingWidth="171.8310546875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Text fill="#c3dfe0" layoutX="340.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMBER DESIRED" textAlignment="RIGHT" wrappingWidth="161.8310546875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Text fill="#c3dfe0" layoutX="316.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE (EUR/KG)" textAlignment="RIGHT" wrappingWidth="185.8310546875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Button fx:id="cancelButton" layoutX="539.0" layoutY="586.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../../../CSS/styles.css" text="CANCEL" textAlignment="CENTER" textFill="#c3dfe0">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Button>
+         <Button fx:id="addItemsButton" layoutX="558.0" layoutY="516.0" mnemonicParsing="false" onAction="#addItems" stylesheets="@../../../CSS/styles.css" text="ADD" textAlignment="CENTER" textFill="#c3dfe0">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Button>
+         <Label fx:id="warningLabel" alignment="CENTER" layoutX="230.0" layoutY="132.0" prefHeight="17.0" prefWidth="741.0" textFill="#c3dfe0" />
+      </AnchorPane>
+   </center>
+</BorderPane>

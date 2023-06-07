@@ -1,0 +1,17 @@
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.button {
+    -fx-background-color:  #376996;
+}
+
+.button:hover {
+    -fx-background-color:  #1C354A;
+}

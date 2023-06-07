@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_cw_st79404.regularTablePageController">
+   <center>
+       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <Button fx:id="logoutButton" layoutX="56.0" layoutY="715.0" mnemonicParsing="false"
+                   onAction="#moveToFirstPage" prefHeight="45.0" prefWidth="140.0"
+                   stylesheets="@../../../CSS/styles.css" text="LOG OUT" textAlignment="CENTER" textFill="#c3dfe0">
+               <font>
+                   <Font name="System Bold" size="24.0"/>
+               </font>
+           </Button>
+           <TableView fx:id="StockedItemsTable" editable="true" layoutX="250.0" layoutY="85.0" prefHeight="600.0"
+                      prefWidth="940.0" stylesheets="@../../../CSS/styles.css">
+               <columns>
+                   <TableColumn fx:id="itemID" prefWidth="156.06" text="Item ID"/>
+                   <TableColumn fx:id="itemName" prefWidth="156.06" text="Item Name"/>
+                   <TableColumn fx:id="itemType" prefWidth="156.06" text="Item Type"/>
+                   <TableColumn fx:id="itemQuantity" prefWidth="156.06" text="Number Available"/>
+                   <TableColumn fx:id="itemDesiredQuantity" prefWidth="156.06" text="Number Desired"/>
+                   <TableColumn fx:id="itemPrice" prefWidth="156.06" text="Price (EUR/KG)"/>
+               </columns>
+           </TableView>
+           <Label fx:id="greetingLabel" alignment="CENTER" layoutX="10.0" layoutY="29.0" prefHeight="20.0"
+                  prefWidth="234.0" textFill="#c3dfe0">
+              <font>
+                  <Font size="14.0"/>
+              </font>
+           </Label>
+           <Button fx:id="addButton" layoutX="52.0" layoutY="334.0" mnemonicParsing="false" onAction="#addData"
+                   prefHeight="50.0" prefWidth="150.0" stylesheets="@../../../CSS/styles.css" text="ADD"
+                   textAlignment="CENTER" textFill="#c3dfe0">
+              <font>
+                  <Font name="System Bold" size="24.0"/>
+              </font>
+           </Button>
+           <TextField fx:id="searchField" layoutX="250.0" layoutY="20.0" prefHeight="39.0" prefWidth="940.0"
+                      promptText="Search (Item ID, Name, Type, Price)">
+              <font>
+                  <Font size="18.0"/>
+              </font>
+           </TextField>
+           <Label fx:id="storeDataView" alignment="CENTER" layoutX="29.0" layoutY="231.0" prefHeight="20.0"
+                  prefWidth="196.0" textFill="#c3dfe0">
+              <font>
+                  <Font size="14.0"/>
+              </font>
+           </Label>
+           <Label fx:id="editInfoText" alignment="CENTER" layoutX="5.0" layoutY="269.0" prefHeight="20.0"
+                  prefWidth="240.0" text="Double click on a data entry to edit." textFill="#c3dfe0">
+              <font>
+                  <Font size="14.0"/>
+              </font>
+           </Label>
+           <Button fx:id="saveItemChangeButton" disable="true" layoutX="582.0" layoutY="715.0" mnemonicParsing="false"
+                   onAction="#saveItemChanges" prefHeight="51.0" prefWidth="276.0"
+                   stylesheets="@../../../CSS/styles.css" text="SAVE ITEM CHANGES" textAlignment="CENTER"
+                   textFill="#c3dfe0">
+              <font>
+                  <Font name="System Bold" size="24.0"/>
+              </font>
+           </Button>
+           <Label fx:id="warningTableLabel" alignment="CENTER" layoutX="577.0" layoutY="685.0" prefHeight="17.0"
+                  prefWidth="287.0" textAlignment="CENTER" textFill="#c3dfe0"/>
+       </AnchorPane>
+   </center>
+</BorderPane>
