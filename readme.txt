@@ -1,11 +1,5 @@
-CONVENIENCE STORE MANAGEMENT APP
+# Object Oriented Programming Course Project
 
-In order to run the app in IntelliJ you need to add the JDBC file to the dependencies.
+This project was a month-long assignment done at the end of the second quarter of 2023. The task was to develop an application based on a topic of choice. The chosen topic was "Convienience store management app".
 
-To do so:
-1. Open the project OOP_CW_st79404
-2. Press File -> Project Structure -> Modules -> Dependencies
-3. Click on the "+" -> JARs or Directories
-4. Find the mssql-jdbc-11.2.0.jre17.jar file and add it.
-5. Apply -> OK
-
+The app is currently non-functional as the online SQL database is offline at the moment.
